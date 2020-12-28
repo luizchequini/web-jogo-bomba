@@ -2,7 +2,47 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="divBomba" style="display:none">
+    <h1>Você caiu na bomba! Tente novamente</h1>
+    <h3>Você tem <span id="txtchancebomba">0</span> chances para achar a bomba!</h3>
+    <h5>
+        Sua pontuação total é <span id="txtPontoBomba">0</span>&nbsp;&nbsp;
+        <input class="btn btn-info" type="button" id="btnJogar" value="Tentar Novamente" />
+    </h5>
+
+    <h1 style="display:none">FIM DO JOGO</h1>
+    <br />
+    <img src="~/img/bomba.png" />
 </div>
+
+<div class="container-fluid" id="divContainer">
+    <div class="row">
+        <div class="col-md-3">
+            <input class="btn btn-info" type="button" id="btnLuz" value="Apagar Luz" />
+        </div>
+        <div class="col-md-9">
+            <b><label class="text-center textoTela">Você tem <span id="txtChance">0</span> chances para achar a bomba</label></b>
+            <b><label class="text-center textoTela">Sua pontuação é de <span id="txtPontos">0</span></label></b>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="row col-md-6 caixaJogo">
+            <div id="selecao_1" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_2" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_3" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_4" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_5" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_6" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_7" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_8" class="col-md-4 caixaSelecao"></div>
+            <div id="selecao_9" class="col-md-4 caixaSelecao"></div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<link href="~/css/Jogo.css" rel="stylesheet" />
+<script src="~/js/Jogo.js"></script>
