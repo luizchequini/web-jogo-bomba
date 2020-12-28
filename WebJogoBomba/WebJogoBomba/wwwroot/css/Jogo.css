@@ -24,8 +24,6 @@
 
 #divBomba {
     position: absolute;
-    width: 100px;
-    height: 80px;
     background-color: white;
     z-index: 1000;
     padding: 1rem;
@@ -35,8 +33,11 @@ img{
     padding:1rem;
     box-shadow:9px 7px 5px;
     border-radius:7px;
-    width:80%;
-    height:60%;
+    width:50%;
     transition:0.5s;
     opacity:0.6;
+}
+
+.caixaSelecaoExplode{
+    transform: translate(160px, -560px) rotate(400deg);
 }
